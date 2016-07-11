@@ -14,6 +14,8 @@
 		475D322C1D33DCD4002DB6DD /* DiceRollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D322B1D33DCD4002DB6DD /* DiceRollerTests.swift */; };
 		475D32371D33DCD4002DB6DD /* DiceRollerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D32361D33DCD4002DB6DD /* DiceRollerUITests.swift */; };
 		475D32451D33E140002DB6DD /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D32441D33E140002DB6DD /* MainVC.swift */; };
+		475D32471D33FB85002DB6DD /* Screen2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D32461D33FB85002DB6DD /* Screen2VC.swift */; };
+		475D32491D3401E2002DB6DD /* Screen3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D32481D3401E2002DB6DD /* Screen3VC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		475D32361D33DCD4002DB6DD /* DiceRollerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRollerUITests.swift; sourceTree = "<group>"; };
 		475D32381D33DCD4002DB6DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		475D32441D33E140002DB6DD /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		475D32461D33FB85002DB6DD /* Screen2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen2VC.swift; sourceTree = "<group>"; };
+		475D32481D3401E2002DB6DD /* Screen3VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen3VC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				475D321F1D33DCD4002DB6DD /* LaunchScreen.storyboard */,
 				475D32221D33DCD4002DB6DD /* Info.plist */,
 				475D32441D33E140002DB6DD /* MainVC.swift */,
+				475D32461D33FB85002DB6DD /* Screen2VC.swift */,
+				475D32481D3401E2002DB6DD /* Screen3VC.swift */,
 			);
 			path = DiceRoller;
 			sourceTree = "<group>";
@@ -256,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				475D32471D33FB85002DB6DD /* Screen2VC.swift in Sources */,
 				475D32451D33E140002DB6DD /* MainVC.swift in Sources */,
+				475D32491D3401E2002DB6DD /* Screen3VC.swift in Sources */,
 				475D32171D33DCD4002DB6DD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
