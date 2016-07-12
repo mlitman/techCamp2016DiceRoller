@@ -12,6 +12,12 @@ class MainVC: UIViewController
 {
 
     
+    @IBOutlet weak var d4Button: UIButton!
+    @IBOutlet weak var d6Button: UIButton!
+    @IBOutlet weak var d8Button: UIButton!
+    @IBOutlet weak var d10Button: UIButton!
+    @IBOutlet weak var d12Button: UIButton!
+    @IBOutlet weak var d20Button: UIButton!
     @IBOutlet weak var myLabel: UILabel!
     override func viewDidLoad()
     {
@@ -26,9 +32,34 @@ class MainVC: UIViewController
         self.presentViewController(vc, animated: true, completion: nil)
     }
     
-    @IBAction func d4ButtonPressed(sender: AnyObject)
+    @IBAction func diceButtonPressed(sender: UIButton)
     {
-        myLabel.text = "D4"
+        var sides = -1
+        if(sender == self.d4Button)
+        {
+            sides = 4
+        }
+        else if(sender == self.d6Button)
+        {
+            sides = 6
+        }
+        else if(sender == self.d8Button)
+        {
+            sides = 8
+        }
+        else if(sender == self.d10Button)
+        {
+            sides = 10
+        }
+        else if(sender == self.d12Button)
+        {
+            sides = 12
+        }
+        else if(sender == self.d20Button)
+        {
+            sides = 20
+        }
+        self.myLabel.text = "\(sides)"
     }
     
     
@@ -39,14 +70,20 @@ class MainVC: UIViewController
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        if(segue.identifier != nil)
+        {
+            if(segue.identifier! == "Screen2")
+            {
+                let vc = segue.destinationViewController as! Screen2VC
+                vc.text2set = self.myLabel.text!
+            }
+        }
     }
-    */
 
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		473F1F691D352C9B00638BF0 /* SavedRollList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F1F681D352C9B00638BF0 /* SavedRollList.swift */; };
 		475D32171D33DCD4002DB6DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D32161D33DCD4002DB6DD /* AppDelegate.swift */; };
 		475D321C1D33DCD4002DB6DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475D321A1D33DCD4002DB6DD /* Main.storyboard */; };
 		475D321E1D33DCD4002DB6DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 475D321D1D33DCD4002DB6DD /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		473F1F681D352C9B00638BF0 /* SavedRollList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedRollList.swift; sourceTree = "<group>"; };
 		475D32131D33DCD4002DB6DD /* DiceRoller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiceRoller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		475D32161D33DCD4002DB6DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		475D321B1D33DCD4002DB6DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				475D32441D33E140002DB6DD /* MainVC.swift */,
 				475D32461D33FB85002DB6DD /* Screen2VC.swift */,
 				475D32481D3401E2002DB6DD /* Screen3VC.swift */,
+				473F1F681D352C9B00638BF0 /* SavedRollList.swift */,
 			);
 			path = DiceRoller;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				475D32471D33FB85002DB6DD /* Screen2VC.swift in Sources */,
 				475D32451D33E140002DB6DD /* MainVC.swift in Sources */,
 				475D32491D3401E2002DB6DD /* Screen3VC.swift in Sources */,
+				473F1F691D352C9B00638BF0 /* SavedRollList.swift in Sources */,
 				475D32171D33DCD4002DB6DD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,6 +494,7 @@
 				475D323D1D33DCD4002DB6DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		475D323E1D33DCD4002DB6DD /* Build configuration list for PBXNativeTarget "DiceRollerTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +503,7 @@
 				475D32401D33DCD4002DB6DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		475D32411D33DCD4002DB6DD /* Build configuration list for PBXNativeTarget "DiceRollerUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +512,7 @@
 				475D32431D33DCD4002DB6DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
