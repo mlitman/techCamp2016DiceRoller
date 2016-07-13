@@ -25,10 +25,74 @@
             </objects>
             <point key="canvasLocation" x="-918" y="-512"/>
         </scene>
+        <!--Save RollVC-->
+        <scene sceneID="F05-Qf-T2h">
+            <objects>
+                <viewController storyboardIdentifier="SaveRollVC" id="0nr-9S-0x1" customClass="SaveRollVC" customModule="DiceRoller" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="83C-xo-v7R"/>
+                        <viewControllerLayoutGuide type="bottom" id="X8a-Vv-eIf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fYl-Sl-ZgL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zwz-J5-OHN">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Save Roll" id="tjS-Au-gIg">
+                                        <barButtonItem key="leftBarButtonItem" title="cancel" id="3KT-tp-Mxf">
+                                            <connections>
+                                                <action selector="cancelButtonPressed" destination="0nr-9S-0x1" id="sTO-4v-EU2"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="save" id="uDF-tq-UhO">
+                                            <connections>
+                                                <action selector="saveButtonPressed" destination="0nr-9S-0x1" id="aVw-Qy-DsI"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roll To Save" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="le4-n0-V6N">
+                                <rect key="frame" x="20" y="87" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of Saved Roll" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zi8-SD-Qwj">
+                                <rect key="frame" x="20" y="116" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zi8-SD-Qwj" firstAttribute="top" secondItem="le4-n0-V6N" secondAttribute="bottom" constant="8" symbolic="YES" id="169-Vy-AQ6"/>
+                            <constraint firstItem="Zi8-SD-Qwj" firstAttribute="leading" secondItem="le4-n0-V6N" secondAttribute="leading" id="1f6-il-fht"/>
+                            <constraint firstItem="zwz-J5-OHN" firstAttribute="leading" secondItem="fYl-Sl-ZgL" secondAttribute="leading" id="5VZ-eZ-3Zd"/>
+                            <constraint firstItem="le4-n0-V6N" firstAttribute="top" secondItem="zwz-J5-OHN" secondAttribute="bottom" constant="15" id="6uY-SH-YzZ"/>
+                            <constraint firstItem="zwz-J5-OHN" firstAttribute="centerX" secondItem="le4-n0-V6N" secondAttribute="centerX" id="RQE-Ua-1Yq"/>
+                            <constraint firstItem="zwz-J5-OHN" firstAttribute="top" secondItem="83C-xo-v7R" secondAttribute="bottom" constant="8" id="cfT-0G-jAZ"/>
+                            <constraint firstItem="Zi8-SD-Qwj" firstAttribute="trailing" secondItem="le4-n0-V6N" secondAttribute="trailing" id="kE8-6n-8T7"/>
+                            <constraint firstItem="le4-n0-V6N" firstAttribute="leading" secondItem="fYl-Sl-ZgL" secondAttribute="leadingMargin" id="w15-zu-MxO"/>
+                            <constraint firstAttribute="trailing" secondItem="zwz-J5-OHN" secondAttribute="trailing" id="we8-rN-6kv"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="nameTF" destination="Zi8-SD-Qwj" id="yaC-FB-beZ"/>
+                        <outlet property="roll2SaveLabel" destination="le4-n0-V6N" id="W08-mI-rgB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oiS-6U-Ap0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-279" y="-2122"/>
+        </scene>
         <!--rolls-->
         <scene sceneID="5aG-SC-7yH">
             <objects>
-                <viewController id="bDw-pU-PFW" sceneMemberID="viewController">
+                <viewController id="bDw-pU-PFW" customClass="SavedRollsVC" customModule="DiceRoller" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rTY-6D-z9k"/>
                         <viewControllerLayoutGuide type="bottom" id="8or-BZ-qUf"/>
@@ -41,7 +105,11 @@
                                 <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                                 <items>
                                     <navigationItem title="Saved Rolls" id="1XX-d7-5HC">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xG4-a1-2Aw"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xG4-a1-2Aw">
+                                            <connections>
+                                                <action selector="addButtonPressed" destination="bDw-pU-PFW" id="06h-5q-ucq"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -113,7 +181,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gk0-Vn-pc2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="272" y="-1328"/>
+            <point key="canvasLocation" x="196" y="-1389.5"/>
         </scene>
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
@@ -195,7 +263,7 @@
                                 <rect key="frame" x="279" y="364" width="30" height="30"/>
                                 <state key="normal" title="DEL"/>
                                 <connections>
-                                    <action selector="deleteButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7W9-EZ-u4S"/>
+                                    <action selector="deleteButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sGR-ww-WEg"/>
                                 </connections>
                             </button>
                         </subviews>

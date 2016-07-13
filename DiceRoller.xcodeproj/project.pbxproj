@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		470744251D3675B9006473C3 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470744241D3675B9006473C3 /* Core.swift */; };
+		470744271D3677A4006473C3 /* SavedRollsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470744261D3677A4006473C3 /* SavedRollsVC.swift */; };
+		470744291D367DF4006473C3 /* SaveRollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470744281D367DF4006473C3 /* SaveRollVC.swift */; };
 		473F1F691D352C9B00638BF0 /* SavedRollList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F1F681D352C9B00638BF0 /* SavedRollList.swift */; };
 		475D32171D33DCD4002DB6DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D32161D33DCD4002DB6DD /* AppDelegate.swift */; };
 		475D321C1D33DCD4002DB6DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475D321A1D33DCD4002DB6DD /* Main.storyboard */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		470744241D3675B9006473C3 /* Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
+		470744261D3677A4006473C3 /* SavedRollsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedRollsVC.swift; sourceTree = "<group>"; };
+		470744281D367DF4006473C3 /* SaveRollVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveRollVC.swift; sourceTree = "<group>"; };
 		473F1F681D352C9B00638BF0 /* SavedRollList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedRollList.swift; sourceTree = "<group>"; };
 		475D32131D33DCD4002DB6DD /* DiceRoller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiceRoller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		475D32161D33DCD4002DB6DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +118,9 @@
 				475D32461D33FB85002DB6DD /* Screen2VC.swift */,
 				475D32481D3401E2002DB6DD /* Screen3VC.swift */,
 				473F1F681D352C9B00638BF0 /* SavedRollList.swift */,
+				470744241D3675B9006473C3 /* Core.swift */,
+				470744261D3677A4006473C3 /* SavedRollsVC.swift */,
+				470744281D367DF4006473C3 /* SaveRollVC.swift */,
 			);
 			path = DiceRoller;
 			sourceTree = "<group>";
@@ -265,8 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				470744251D3675B9006473C3 /* Core.swift in Sources */,
 				475D32471D33FB85002DB6DD /* Screen2VC.swift in Sources */,
+				470744271D3677A4006473C3 /* SavedRollsVC.swift in Sources */,
 				475D32451D33E140002DB6DD /* MainVC.swift in Sources */,
+				470744291D367DF4006473C3 /* SaveRollVC.swift in Sources */,
 				475D32491D3401E2002DB6DD /* Screen3VC.swift in Sources */,
 				473F1F691D352C9B00638BF0 /* SavedRollList.swift in Sources */,
 				475D32171D33DCD4002DB6DD /* AppDelegate.swift in Sources */,
