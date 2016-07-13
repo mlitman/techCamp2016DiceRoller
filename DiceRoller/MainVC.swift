@@ -54,6 +54,12 @@ class MainVC: UIViewController
         
     }
     
+    @IBAction func clearButtonPressed()
+    {
+        self.rollText.text = ""
+        Core.currentRoll = ""
+    }
+    
     @IBAction func rollButtonPressed(sender: AnyObject)
     {
        let parts = self.rollText.text!.componentsSeparatedByString("+")
